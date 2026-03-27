@@ -1,21 +1,16 @@
-MIT License
+# License Summary
 
-Copyright (c) 2026 lanytehq
+This repository uses a split licensing model:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+- **Code** (software, scripts, tooling) is dual-licensed under **MIT OR Apache-2.0** at your option.
+  - See `LICENSE-MIT` and `LICENSE-APACHE`.
+- **Creative works and data** (documentation, specifications, schemas, registries, and other non-code assets) are dedicated to the public domain under **CC0 1.0**.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## Trademark Notice
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+"3 Leaps" is a registered trademark of 3 Leaps, LLC. "Lanyte" and "LanyteHQ" are project names and trademarks of 3 Leaps, LLC, claimed through use in commerce.
+
+While code and documentation are open under the licenses above, use of these marks in derivative works does not imply endorsement by 3 Leaps, LLC. As a courtesy, rename derivative projects to avoid using "lanyte" or "lanytehq" in repository, package, or product names.
+
+For additional governance details and contributor obligations, see:
+https://github.com/3leaps/oss-policies
