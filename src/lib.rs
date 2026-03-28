@@ -803,6 +803,7 @@ mod tests {
     use std::net::TcpListener;
     #[cfg(feature = "http")]
     use std::thread;
+    use tempfile::tempdir;
 
     #[test]
     fn result_types_round_trip_through_serde() {
@@ -877,9 +878,8 @@ mod tests {
 
     #[test]
     fn file_verifier_passes_when_contents_match() {
-        let temp_dir = std::env::temp_dir().join(format!("lanyte-verify-{}", std::process::id()));
-        fs::create_dir_all(&temp_dir).unwrap();
-        let file_path = temp_dir.join("match.txt");
+        let temp_dir = tempdir().unwrap();
+        let file_path = temp_dir.path().join("match.txt");
         fs::write(&file_path, "hello\nworld\n").unwrap();
 
         let verifier = FileVerifier::new();
@@ -904,9 +904,8 @@ mod tests {
 
     #[test]
     fn file_verifier_reports_diff_on_mismatch() {
-        let temp_dir = std::env::temp_dir().join(format!("lanyte-verify-{}", std::process::id()));
-        fs::create_dir_all(&temp_dir).unwrap();
-        let file_path = temp_dir.join("mismatch.txt");
+        let temp_dir = tempdir().unwrap();
+        let file_path = temp_dir.path().join("mismatch.txt");
         fs::write(&file_path, "hello\nmars\n").unwrap();
 
         let verifier = FileVerifier::new();
